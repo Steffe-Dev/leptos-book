@@ -1,9 +1,4 @@
 {
-    "rust-analyzer.rustfmt.overrideCommand": [
-        "leptosfmt",
-        "--stdin",
-        "--rustfmt"
-    ],
     "editor.formatOnSave": true,
     "[rust]": {
         "editor.defaultFormatter": "rust-lang.rust-analyzer",
@@ -11,4 +6,5 @@
     "files.associations": {
         "*.rs": "rust"
     },
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
 }

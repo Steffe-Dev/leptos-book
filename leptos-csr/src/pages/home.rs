@@ -1,4 +1,4 @@
-use crate::components::basic_component::BasicComponent;
+use crate::components::{basic_component::BasicComponent, complex_iter::ComplexIter, forms::Forms};
 use leptos::prelude::*;
 
 /// Default Home Page
@@ -42,7 +42,7 @@ pub fn Home() -> impl IntoView {
                 <h1>"Welcome to Leptos"</h1>
 
                 <div class="buttons">
-                    <BasicComponent />
+                    <Forms />
                 </div>
 
             </div>
