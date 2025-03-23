@@ -1,4 +1,7 @@
-use crate::components::{basic_component::BasicComponent, complex_iter::ComplexIter, forms::Forms};
+use crate::components::{
+    basic_component::BasicComponent, complex_iter::ComplexIter, forms::Forms,
+    parent_child_buttons::ParentChildButtons,
+};
 use leptos::prelude::*;
 
 /// Default Home Page
@@ -10,7 +13,7 @@ pub fn Home() -> impl IntoView {
                 <h1>"Uh oh! Something went wrong!"</h1>
 
                 <p>"Errors: "</p>
-                // Render a list of errors as strings - good for development purposes
+                Render a list of errors as strings - good for development purposes
                 <ul>
                     {move || {
                         errors
@@ -42,7 +45,7 @@ pub fn Home() -> impl IntoView {
                 <h1>"Welcome to Leptos"</h1>
 
                 <div class="buttons">
-                    <Forms />
+                <BasicComponent />
                 </div>
 
             </div>
